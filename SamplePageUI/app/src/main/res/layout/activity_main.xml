@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/generalnotitle"
+    android:fitsSystemWindows="true"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:id="@+id/Retailer_Photos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f1f1f1"
+        android:orientation="vertical"
+        android:fitsSystemWindows="true"
+        tools:context="com.example.android.samplepageui.MainActivity">
+
+        <FrameLayout
+            style="@style/Frame"
+            android:layout_margin="0dp">
+
+            <HorizontalScrollView
+                android:id="@+id/horizontal_scroll"
+                android:layout_width="match_parent"
+                android:fitsSystemWindows="true"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/linear"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/big_line_heightx9"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:cropToPadding="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/retail_home" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/big_line_heightx9"
+                        android:cropToPadding="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/business_shot" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/big_line_heightx9"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/casual_shot" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/big_line_heightx9"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/full_sleeve" />
+                </LinearLayout>
+
+            </HorizontalScrollView>
+        </FrameLayout>
+
+        <FrameLayout
+            style="@style/Frame"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/big_line_heightx4"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/big_line_heightx4"
+                        android:layout_height="@dimen/big_line_heightx4"
+                        android:src="@drawable/store_main" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:paddingLeft="8dp"
+                        android:paddingTop="16dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:text="ZARA Retail"
+                            android:textSize="@dimen/text_size_medium"
+                            android:textStyle="bold"
+                            android:textColor="@android:color/white" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="3"
+                            android:paddingTop="2dp"
+                            android:text="Pheonix market city, whitefield"
+                            android:textSize="@dimen/text_size_small" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:paddingRight="16dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="end|bottom"
+                            android:text="4.8"
+                            android:textSize="@dimen/text_size_medium" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="end"
+                            android:layout_weight="1"
+                            android:gravity="end"
+                            android:text="2488"
+                            android:textSize="@dimen/text_size_small" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </FrameLayout>
+
+        <FrameLayout
+            style="@style/Frame"
+            android:layout_marginTop="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/big_line_heightx4"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/big_line_heightx2"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.25"
+                        android:src="@drawable/ic_call_black_24dp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Open Now : 11:00am to 11:00pm"
+                        android:textSize="@dimen/text_size_small"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/big_line_heightx2"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/rate"
+                        style="@style/buttons_style"
+                        android:clickable="true"
+                        android:text="@string/underlined_rate" />
+
+                    <Button
+                        style="@style/buttons_style"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginRight="0dp"
+                        android:elevation="4dp"
+                        android:text="Check-in"
+                        android:textSize="14sp" />
+
+                    <Button
+                        style="@style/buttons_style"
+                        android:elevation="4dp"
+                        android:text="Follow" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </FrameLayout>
+
+        <FrameLayout style="@style/Frame">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/extra_texts"
+                    android:text="Ongoing offer - upto 80% off" />
+
+                <View style="@style/divider_line" />
+
+                <TextView
+                    style="@style/extra_texts"
+                    android:text="New collection in store" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <FrameLayout style="@style/Frame">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/extra_texts"
+                        android:gravity="center"
+                        android:text="Store Details"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <View style="@style/divider_line" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="4dp" />
+
+                    <TextView
+                        style="@style/details_style"
+                        android:text="For-men|children" />
+
+                    <TextView
+                        style="@style/details_style"
+                        android:text="For-men|children" />
+
+                    <TextView
+                        style="@style/details_style"
+                        android:text="For-men|children" />
+
+                    <TextView
+                        style="@style/details_style"
+                        android:text="For-men|children and kids and ladies and trolls and god" />
+
+                    <TextView
+                        style="@style/details_style"
+                        android:text="For-men|children" />
+
+                </LinearLayout>
+
+                <View style="@style/divider_line" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/big_line_heightx2"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/buttons_style"
+                            android:text="Exchange policy"
+                            android:textStyle="normal" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent" />
+                    </LinearLayout>
+
+                    <View style="@style/divider_line" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/big_line_heightx2"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/buttons_style"
+                            android:text="About the store"
+                            android:textStyle="normal" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+
+        <FrameLayout style="@style/Frame">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/big_line_heightx2"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Product types"
+                        android:textSize="@dimen/text_size_medium" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="see more..." />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/big_line_heightx2">
+
+                    <TextView
+                        style="@style/buttons_style"
+                        android:layout_marginBottom="2dp"
+                        android:text="Formal shirt" />
+
+                    <TextView
+                        style="@style/buttons_style"
+                        android:layout_marginBottom="2dp"
+                        android:text="V-neck shirt" />
+
+                    <TextView
+                        style="@style/buttons_style"
+                        android:layout_marginBottom="2dp"
+                        android:text="Belt" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/big_line_heightx2">
+
+                    <TextView
+                        style="@style/buttons_style"
+                        android:layout_marginBottom="2dp"
+                        android:text="Track suit" />
+
+                    <TextView
+                        style="@style/buttons_style"
+                        android:layout_marginBottom="2dp"
+                        android:text="Sport shoes" />
+
+                    <TextView
+                        style="@style/buttons_style"
+                        android:layout_marginBottom="2dp"
+                        android:text="Socks" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </FrameLayout>
+
+        <FrameLayout style="@style/Frame">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="8dp"
+                android:paddingLeft="8dp"
+                android:paddingTop="8dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingRight="2dp"
+                    android:text="@string/Lengthy_string"
+                    android:textSize="@dimen/text_size_medium" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:src="@drawable/ic_location_on_black_24dp" />
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <TextView
+            style="@style/details_style"
+            android:text="Similar Stores" />
+
+        <FrameLayout style="@style/Frame">
+
+            <HorizontalScrollView
+                android:id="@+id/store_suggestions_horizontal_scroll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/store_suggestions"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/big_line_heightx4"
+                        android:layout_height="@dimen/big_line_heightx4"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/store_icon" />
+
+                    <ImageView
+                        android:layout_width="@dimen/big_line_heightx4"
+                        android:layout_height="@dimen/big_line_heightx4"
+                        android:src="@drawable/store_icon_re" />
+
+                    <ImageView
+                        android:layout_width="@dimen/big_line_heightx4"
+                        android:layout_height="@dimen/big_line_heightx4"
+                        android:src="@drawable/store_icon_rec" />
+
+                    <ImageView
+                        android:layout_width="@dimen/big_line_heightx4"
+                        android:layout_height="@dimen/big_line_heightx4"
+                        android:src="@drawable/store_i" />
+
+                    <ImageView
+                        android:layout_width="@dimen/big_line_heightx4"
+                        android:layout_height="@dimen/big_line_heightx4"
+                        android:src="@drawable/store_ii" />
+
+                    <ImageView
+                        android:layout_width="@dimen/big_line_heightx4"
+                        android:layout_height="@dimen/big_line_heightx4"
+                        android:src="@drawable/store_iii" />
+
+                    <ImageView
+                        android:layout_width="@dimen/big_line_heightx4"
+                        android:layout_height="@dimen/big_line_heightx4"
+                        android:src="@drawable/store_iiiii" />
+
+                    <ImageView
+                        android:layout_width="@dimen/big_line_heightx4"
+                        android:layout_height="@dimen/big_line_heightx4"
+                        android:src="@drawable/store_icon_reccc" />
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+        </FrameLayout>
+    </LinearLayout>
+
+
+</ScrollView>

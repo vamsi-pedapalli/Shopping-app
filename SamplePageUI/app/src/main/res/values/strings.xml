@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">SamplePageUI</string>
+    <string name="underlined_rate">Rate</string>
+    <string name="Lengthy_string">Address : Ground floor, pheonix market city, mahadevapura, whitefield,- 888588</string>
+    <string name="too_lengthy">Address : Ground floor, pheonix market city, mahadevapura, whitefield,- 888588Address : Ground floor, pheonix market city, mahadevapura, whitefield,- 888588</string>
+</resources>
