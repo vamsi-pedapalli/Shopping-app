@@ -16,7 +16,16 @@
             </intent-filter>
         </activity>
         <activity android:name=".StoreListActivity" />
-        <activity android:name=".StoreProfilePageActivity"></activity>
+        <activity
+            android:name=".StoreProfilePageActivity"
+            android:label="second page"
+            android:parentActivityName=".MainActivity">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
     </application>
 
 </manifest>
