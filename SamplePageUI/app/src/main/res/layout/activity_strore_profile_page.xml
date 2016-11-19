@@ -214,12 +214,21 @@
                                 style="@style/Side_index_style"
                                 android:text="@string/for_word" />
 
-                            <TextView
-                                style="@style/details_style"
-                                android:layout_width="match_parent"
-                                android:gravity="end"
-                                android:text="@string/men_women_children"
-                                android:textAllCaps="false" />
+                            <ImageView
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:src="@drawable/man_icon" />
+
+                            <ImageView
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:src="@drawable/man_icon" />
+
+                            <ImageView
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:backgroundTint="@color/colorAccent"
+                                android:src="@drawable/man_icon" />
 
                         </LinearLayout>
 

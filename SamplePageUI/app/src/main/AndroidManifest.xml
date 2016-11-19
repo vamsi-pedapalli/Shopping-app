@@ -15,7 +15,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".StoreListActivity" />
+        <activity
+            android:name=".StoreListActivity"
+            android:theme="@style/withActionBar" />
         <activity
             android:name=".StoreProfilePageActivity"
             android:label="second page"

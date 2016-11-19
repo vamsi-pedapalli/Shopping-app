@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_third_page"
+    android:layout_width="match_parent"
+    android:layout_height="236dp"
+    android:background="@android:color/darker_gray"
+    tools:context="com.example.android.samplepageui.StoreListActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="2dp"
+        android:background="@android:color/white"
+        android:elevation="4dp"
+        android:paddingBottom="2dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="236dp">
+
+            <ImageView
+                android:id="@+id/store_wallpaper"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:scaleType="centerCrop"
+                tools:src="@drawable/allen_solly" />
+
+
+            <TextView
+                android:id="@+id/store_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="12dp"
+                android:alpha="0.8"
+                android:background="@drawable/grey_circle_shape"
+                android:drawableTop="@drawable/ic_location_on_black_24dp"
+                android:gravity="clip_horizontal|center_horizontal"
+                android:maxLines="2"
+                android:maxWidth="60dp"
+                android:padding="8dp"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                tools:text="1.2 km" />
+
+            <TextView
+                android:id="@+id/store_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/store_address"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:alpha="0.8"
+                android:background="#D8D8D8"
+                android:maxLines="2"
+                android:paddingLeft="12dp"
+                android:paddingStart="12dp"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:textColor="@android:color/black"
+                tools:text="Allen Solly Red Blue Yellow " />
+
+            <TextView
+                android:id="@+id/store_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/wallpaper"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:alpha="0.8"
+                android:background="#D8D8D8"
+                android:maxLines="1"
+                android:paddingLeft="12dp"
+                android:paddingStart="12dp"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="@android:color/black"
+                tools:text="100_feet_road_indiranagar, BC road" />
+
+
+            <ImageView
+                android:id="@+id/icon_man"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignWithParentIfMissing="true"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginStart="12dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/man_icon"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/icon_woman"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignWithParentIfMissing="true"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginStart="4dp"
+                android:layout_toEndOf="@+id/icon_man"
+                android:layout_toRightOf="@+id/icon_man"
+                android:src="@drawable/women_icon"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/icon_kid"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignTop="@+id/icon_woman"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginStart="4dp"
+                android:layout_toEndOf="@+id/icon_woman"
+                android:layout_toRightOf="@+id/icon_woman"
+                android:src="@drawable/man_icon" />
+
+            <TextView
+                android:id="@+id/no_of_bookmarks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignWithParentIfMissing="true"
+                android:layout_below="@+id/wallpaper"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginRight="12dp"
+                android:drawableTop="@drawable/ic_bookmark_border_black_36dp"
+                android:gravity="center_horizontal"
+                android:textColor="@android:color/black"
+                android:textSize="12sp"
+                tools:text="100 Marks" />
+
+            <TextView
+                android:id="@+id/open_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/store_open_time"
+                android:layout_centerHorizontal="true"
+                android:text="Open Now"
+                android:textColor="@android:color/black"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/store_open_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:textColor="@android:color/black"
+                android:textSize="12sp"
+                tools:text="88:00 to 88:00" />
+
+        </RelativeLayout>
+    </FrameLayout>
+
+
+</RelativeLayout>
